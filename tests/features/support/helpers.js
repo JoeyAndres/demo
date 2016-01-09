@@ -41,7 +41,7 @@ global.user_click_selector = function (user, selector) {
     // Set 500ms as min wait time before click.
     // Prior to this, cucumber was clicking while on transition, therefore
     // missing and throwing errors about different element received the clicked.
-    i_wait_for_x_seconds(0.5);
+    i_wait_for_x_seconds(0.2);
     get_browser_for(user).click(selector);
 };
 
