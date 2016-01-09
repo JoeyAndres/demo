@@ -12,5 +12,15 @@ This is a demo of the various [Meteoric](https://github.com/meteoric) packages:
 
 See it in action here: [meteoric.github.io](http://meteoric.github.io)
 
+# Acceptance Testing
+
+This demo is also used for testing when duplicating original ionic. This is because styling changes break things,
+or simply that we want new features to behave as we expected.
+
+## To run:
+
+npm install chimp
+~/node\_modules/chimp/bin/chimp --ddp=http://localhost:3000  # Change this to whatever directory chimp was installed.
+
 ## License
 [MIT License](https://github.com/meteoric/demo/blob/master/LICENSE)
