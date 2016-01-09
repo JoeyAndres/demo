@@ -19,8 +19,10 @@ or simply that we want new features to behave as we expected.
 
 ## To run:
 
+```bash
 npm install chimp
 ~/node\_modules/chimp/bin/chimp --ddp=http://localhost:3000  # Change this to whatever directory chimp was installed.
+```
 
 ## License
 [MIT License](https://github.com/meteoric/demo/blob/master/LICENSE)
