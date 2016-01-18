@@ -19,4 +19,6 @@ module.exports = function() {
     this.Given(/^I wait for "([^"]*)" seconds$/, i_wait_for_x_seconds);
 
     this.Given(/^"([^"]*)" click back button$/, user_click_back_button);
+
+    this.Given(/^"([^"]*)" drag "([^"]*)" to "([^"]*)"$/, user_drag_from_to);
 };

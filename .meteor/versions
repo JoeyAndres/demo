@@ -6,6 +6,7 @@ aldeed:collection2-core@1.0.0
 aldeed:schema-deny@1.0.1
 aldeed:schema-index@1.0.1
 aldeed:simple-schema@1.5.3
+aldeed:template-extension@4.0.0
 anti:fake@0.4.1
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
@@ -49,7 +50,9 @@ iron:location@1.0.9
 iron:middleware-stack@1.0.9
 iron:router@1.0.9
 iron:url@1.0.9
-jandres:ionic@0.1.20
+jandres:ionic@0.1.23
+jandres:mutation-summary@0.0.1
+jandres:template-children@0.0.3
 jquery@1.11.4
 launch-screen@1.0.4
 livedata@1.0.15
@@ -91,6 +94,7 @@ srp@1.0.4
 standard-minifiers@1.0.2
 templating@1.1.5
 templating-tools@1.0.0
+timdown:rangy@1.2.3
 tracker@1.0.9
 ui@1.0.8
 underscore@1.0.4

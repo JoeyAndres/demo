@@ -1,4 +1,4 @@
-<template name="lists">
+<template name="listsSortable">
     {{#contentFor "headerButtonLeft"}}
         {{>ionNavBackButton path="index"}}
     {{/contentFor}}
@@ -11,7 +11,7 @@
 
     {{#ionView}}
         {{#ionContent}}
-            {{#ionList onReorder=onReorder}}
+            {{#ionList ionSortable=true onReorder=onReorder}}
 
                 {{#each times}}
                     {{#ionItem buttonRight=true avatar=true index=this}}

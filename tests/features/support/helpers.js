@@ -88,3 +88,7 @@ global.user_touch_flick_id_by_x_y_at_z_pps = function(user, id, x, y, z) {
     get_browser_for(user).waitForExist(id);
     get_browser_for(user).touchFlick(id, x, y, z);
 };
+
+global.user_drag_from_to = function (user, from, to) {
+    get_browser_for(user).dragAndDrop(from, to);
+};
