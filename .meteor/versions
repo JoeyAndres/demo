@@ -50,7 +50,7 @@ iron:location@1.0.9
 iron:middleware-stack@1.0.9
 iron:router@1.0.9
 iron:url@1.0.9
-jandres:ionic@0.1.23
+jandres:ionic@0.1.24
 jandres:mutation-summary@0.0.1
 jandres:template-children@0.0.3
 jquery@1.11.4
