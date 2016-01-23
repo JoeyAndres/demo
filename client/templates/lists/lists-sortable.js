@@ -7,6 +7,7 @@ Template.listsSortable.onCreated(function(){
 
 Template.listsSortable.onRendered(function(){
     $("#button-delete").click(() => this.deletable.set(!this.deletable.get()));
+    $("#button-reorder").click(() => this.sortable.set(!this.sortable.get()));
 });
 
 Template.listsSortable.helpers({
@@ -30,12 +31,5 @@ Template.listsSortable.helpers({
 
     deletable: function () {
         return Template.instance().deletable.get();
-    }
-});
-
-Template.listsSortable.events({
-    "change #sortable-checkbox": function(e, template) {
-        let sortable = e.target.checked;
-        template.sortable.set(sortable);
     }
 });

@@ -5,19 +5,13 @@
     {{#contentFor "headerTitle"}}
         <h1 class="title">Lists</h1>
     {{/contentFor}}
+    {{#contentFor "headerButtonRight"}}
+        <button class="button button-clear" id="button-reorder">Reorder</button>
+    {{/contentFor}}
 
     {{#ionView}}
         {{#ionContent}}
-            <li class="item item-toggle">
-                Sortable
-                <label class="toggle">
-                    <input type="checkbox" id="sortable-checkbox">
-                    <div class="track">
-                        <div class="handle"></div>
-                    </div>
-                </label>
-            </li>
-            {{#ionList ionSortable=sortable onReorder=onReorder showDelete=deletable}}
+            {{#ionList onReorder=onReorder showDelete=deletable showReorder=sortable canSwipe=true}}
                 {{#each times}}
                     {{#ionItem class="item-button-right item-avatar-right" index=this}}
                         {{#ionItemContent}}
@@ -36,6 +30,7 @@
                         {{/ionItemOptions}}
 
                         {{#ionDeleteButton class="ion-minus-circled"}}{{/ionDeleteButton}}
+                        {{#ionReorderButton class="ion-navicon"}}{{/ionReorderButton}}
                     {{/ionItem}}
                 {{/each}}
             {{/ionList}}
