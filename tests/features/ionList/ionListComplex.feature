@@ -1,4 +1,4 @@
-Feature: As a user I should be able to use a basic ionList.
+Feature: As a user I should be able to use complex ion list features.
   Background:
     Given "I" navigate to "/lists/sortable"
 
@@ -26,7 +26,7 @@ Feature: As a user I should be able to use a basic ionList.
     Then "I" should see "//*[contains(., 'John Smith 20')]"
 
   @watch
-  Scenario: Switch arbitrary items around.
+  Scenario: Reorder arbitrary items around.
     And "I" drag "//div[contains(@class, 'item')][1]/*[contains(., 'John Smith 1')]" to "//div[contains(@class, 'item')][2]/*[contains(., 'John Smith 2')]"
     Then "I" should see "//div[contains(@class, 'item')][1]/*[contains(., 'John Smith 2')]"
     Then "I" should see "//div[contains(@class, 'item')][2]/*[contains(., 'John Smith 1')]"
