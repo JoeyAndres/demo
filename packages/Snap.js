@@ -1,1 +1,0 @@
-/home/jandres/CompScie/Snap.js
