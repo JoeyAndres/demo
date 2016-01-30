@@ -29,5 +29,4 @@ useraccounts:ionic
 accounts-password
 
 reactive-var
-jandres:template-children
-jandres:ionic@0.1.29
+jandres:ionic@0.1.38

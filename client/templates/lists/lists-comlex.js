@@ -19,8 +19,9 @@ Template.listsComplex.helpers({
         let template = Template.instance();
         return (item, fromIndex, toIndex) => {
             let newTimes = template.times.get();
-            newTimes.splice(fromIndex, 1);
-            newTimes.splice(toIndex, 0, item.data.index);
+            let oldFrom = newTimes[fromIndex];
+            newTimes[fromIndex] = newTimes[toIndex];
+            newTimes[toIndex] = oldFrom;
             template.times.set(newTimes);
         }
     },
