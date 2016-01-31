@@ -23,6 +23,7 @@ Router.map(function() {
       };
     }
   });
+  this.route('footer');
   this.route('header');
   this.route('headersFooters');
   this.route('lists');
