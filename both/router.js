@@ -22,6 +22,7 @@ Router.map(function() {
       };
     }
   });
+  this.route('header');
   this.route('headersFooters');
   this.route('lists');
   this.route('listsComplex', { path: 'lists/complex' });
