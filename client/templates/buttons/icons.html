@@ -1,0 +1,29 @@
+<template name="demoButtonsIcons">
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Button Icons</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            <div class="padding demo-buttons">
+                <button class="button">
+                    <i class="icon ion-loading-c"></i> Loading...
+                </button>
+                <br>
+                <button class="button icon-left ion-home">Home</button>
+                <br>
+                <button class="button icon-left ion-star button-positive">Favorites</button>
+                <br>
+                <a class="button icon-right ion-chevron-right button-calm">Learn More</a>
+                <br>
+                <a class="button icon-left ion-chevron-left button-clear button-dark">Back</a>
+                <br>
+                <button class="button icon ion-gear-a"></button>
+                <br>
+                <a class="button button-icon icon ion-settings"></a>
+                <br>
+                <a class="button button-outline icon-right ion-navicon button-balanced">Reorder</a>
+            </div>
+        {{/ionContent}}
+    {{/ionView}}
+</template>

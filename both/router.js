@@ -12,10 +12,22 @@ Meteor.startup(function () {
 });
 
 Router.map(function() {
+  // todo: prepend all templates with 'demo'.
   this.route('index', {path: '/'});
   this.route('actionSheet');
   this.route('backdrop');
+
   this.route('buttons');
+  this.route('demoButtonsBlock', { path: 'buttons/block' });
+  this.route('demoButtonsFull', { path: 'buttons/full' });
+  this.route('demoButtonsDifferentSizes', { path: 'buttons/different-sizes' });
+  this.route('demoButtonsOutlined', { path: 'buttons/outlined' });
+  this.route('demoButtonsClear', { path: 'buttons/clear' });
+  this.route('demoButtonsIcons', { path: 'buttons/icons' });
+  this.route('demoButtonsHeadersFooters', { path: 'buttons/headers-footers' });
+  this.route('demoButtonsHeadersFootersClear', { path: 'buttons/headers-footers/clear' });
+  this.route('demoButtonsBar', { path: 'buttons/bar' });
+
   this.route('content');
   this.route('forms', {
     data: function () {
