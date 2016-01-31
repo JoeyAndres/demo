@@ -5,7 +5,7 @@ Template.popup.events({
       template: 'Here\'s a quick popup.',
       buttons: [{
         text: 'Close me',
-        type: 'button-positive',
+        type: 'button-assertive',
         onTap: function() {
           IonPopup.close();
         }
