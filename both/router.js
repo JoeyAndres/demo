@@ -39,8 +39,16 @@ Router.map(function() {
   this.route('footer');
   this.route('header');
   this.route('headersFooters');
+
   this.route('lists');
+  this.route('demoListsDividers', { path: 'lists/dividers' });
+  this.route('demoListsIcons', { path: 'lists/icons' });
+  this.route('demoListsButtons', { path: 'lists/buttons' });
+  this.route('demoListsAvatars', { path: 'lists/avatars' });
+  this.route('demoListsThumbnails', { path: 'lists/thumbnails' });
+  this.route('demoListsInsetLists', { path: 'lists/inset-lists' });
   this.route('listsComplex', { path: 'lists/complex' });
+
   this.route('loading');
   this.route('modal');
   this.route('navigation');

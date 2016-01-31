@@ -10,7 +10,7 @@ This is a demo of the various [Meteoric](https://github.com/meteoric) packages:
 - [meteoric:autoform-ionic](https://github.com/meteoric/autoform-ionic)
 - [meteoric:useraccounts-ionic](https://github.com/meteoric/useraccounts-ionic)
 
-See it in action here: [meteoric.github.io](http://jandres-meteor-ionic.meteor.com)
+See it in action here: [jandres-ionic.meteor.com](http://jandres-ionic.meteor.com)
 
 # Acceptance Testing
 
