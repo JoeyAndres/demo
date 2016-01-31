@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('index', {path: '/'});
   this.route('actionSheet');
   this.route('backdrop');
+  this.route('buttons');
   this.route('content');
   this.route('forms', {
     data: function () {
