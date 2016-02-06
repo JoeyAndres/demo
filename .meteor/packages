@@ -21,7 +21,7 @@ matb33:collection-hooks
 aldeed:collection2
 fourseven:scss@3.3.3
 iron:router
-seba:ionic-sass
+jandres:meteoric-sass
 aldeed:simple-schema
 aldeed:autoform
 meteoric:autoform-ionic
@@ -29,4 +29,4 @@ useraccounts:ionic
 accounts-password
 
 reactive-var
-jandres:ionic@0.1.39
+jandres:ionic@0.1.44

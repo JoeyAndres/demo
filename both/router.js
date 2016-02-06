@@ -49,6 +49,8 @@ Router.map(function() {
   this.route('demoListsInsetLists', { path: 'lists/inset-lists' });
   this.route('listsComplex', { path: 'lists/complex' });
 
+  this.route('demoionScroll', { path: '/scroll' });
+
   this.route('loading');
   this.route('modal');
   this.route('navigation');

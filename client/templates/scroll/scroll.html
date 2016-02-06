@@ -1,0 +1,16 @@
+<template name="demoionScroll">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Scroll</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            {{#ionScroll direction="xy" zooming=true}}
+                <img src="map.png">
+            {{/ionScroll}}
+        {{/ionContent}}
+    {{/ionView}}
+</template>
