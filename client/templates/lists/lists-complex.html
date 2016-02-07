@@ -1,6 +1,6 @@
 <template name="listsComplex">
     {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton path="index"}}
+        <button id="button-delete" class="button button-icon icon ion-ios-minus-outline"></button>
     {{/contentFor}}
     {{#contentFor "headerTitle"}}
         <h1 class="title">Lists</h1>
@@ -13,7 +13,7 @@
         {{#ionContent}}
             {{#ionList onReorder=onReorder showDelete=deletable showReorder=sortable canSwipe=true}}
                 {{#each times}}
-                    {{#ionItem class="item-avatar-left" index=this}}
+                    {{#ionItem class="item-avatar-left"}}
                         {{#ionItemContent}}
                             <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
                             <h2>John Smith {{..}}</h2>
