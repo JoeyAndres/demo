@@ -1,4 +1,4 @@
-<template name="listsComplex">
+<template name="demoListsionInfiniteScroll">
     {{#contentFor "headerButtonLeft"}}
         <button id="button-delete" class="button button-icon icon ion-ios-minus-outline"></button>
     {{/contentFor}}
@@ -34,6 +34,8 @@
                     {{/ionItem}}
                 {{/each}}
             {{/ionList}}
+
+            {{> ionInfiniteScroll onInfinite=onInfinite distance="10%" spinner="android" immediateCheck=true enable=hasMore}}
         {{/ionContent}}
     {{/ionView}}
 </template>

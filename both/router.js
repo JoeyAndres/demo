@@ -50,6 +50,7 @@ Router.map(function() {
   this.route('listsComplex', { path: 'lists/complex' });
 
   this.route('demoionScroll', { path: '/scroll' });
+  this.route('demoListsionInfiniteScroll', { path: 'lists/ionInfiniteScroll' });
 
   this.route('loading');
   this.route('modal');

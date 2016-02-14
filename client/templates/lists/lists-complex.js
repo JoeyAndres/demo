@@ -1,8 +1,8 @@
 Template.listsComplex.onCreated(function(){
-    this.times = new ReactiveVar([]);
+    this.items = new ReactiveVar([]);
     this.sortable = new ReactiveVar(false);
     this.deletable = new ReactiveVar(false);
-    _(20).times((n) => this.times.get().push(n + 1));  // 0 based counting is causing errors for some reason.
+    _(20).times((n) => this.items.get().push(n + 1));  // 0 based counting is causing errors for some reason.
 });
 
 Template.listsComplex.onRendered(function(){
@@ -11,16 +11,16 @@ Template.listsComplex.onRendered(function(){
 });
 
 Template.listsComplex.helpers({
-    times: function () {
-        return Template.instance().times.get();
+    items: function () {
+        return Template.instance().items.get();
     },
 
     onReorder: function() {
         let template = Template.instance();
         return (item, fromIndex, toIndex) => {
-            let newTimes = template.times.get();
+            let newTimes = template.items.get();
             newTimes.splice(toIndex, 0, newTimes.splice(fromIndex, 1)[0]);
-            template.times.set(newTimes);
+            template.items.set(newTimes);
         }
     },
 
