@@ -1,0 +1,14 @@
+<template name="headersFootersFooter">
+    {{> ionHeaderBar class="bar-assertive"}}
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton}}
+    {{/contentFor}}
+    {{#contentFor "headerTitle"}}
+        See bottom of page
+    {{/contentFor}}
+
+    {{>ionFooterBar class="bar-dark"}}
+    {{#contentFor "footerTitle"}}
+        This is a Footer
+    {{/contentFor}}
+</template>
