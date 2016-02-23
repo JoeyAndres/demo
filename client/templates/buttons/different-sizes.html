@@ -1,6 +1,9 @@
 <template name="demoButtonsDifferentSizes">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton path="buttonsIndex"}}
+    {{/contentFor}}
     {{#contentFor "headerTitle"}}
-        <h1 class="title">Different Sized Buttons</h1>
+        Different Sized Buttons
     {{/contentFor}}
 
     {{#ionView}}

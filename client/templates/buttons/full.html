@@ -1,6 +1,9 @@
 <template name="demoButtonsFull">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton path="buttonsIndex"}}
+    {{/contentFor}}
     {{#contentFor "headerTitle"}}
-        <h1 class="title">Full Width Block Buttons</h1>
+        Full Width Block Buttons
     {{/contentFor}}
 
     {{#ionView}}

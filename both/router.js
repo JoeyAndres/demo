@@ -17,7 +17,8 @@ Router.map(function() {
   this.route('actionSheet');
   this.route('backdrop');
 
-  this.route('buttons');
+  this.route('buttonsIndex');
+  this.route('demoButtonsDefault');
   this.route('demoButtonsBlock', { path: 'buttons/block' });
   this.route('demoButtonsFull', { path: 'buttons/full' });
   this.route('demoButtonsDifferentSizes', { path: 'buttons/different-sizes' });

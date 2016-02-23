@@ -1,0 +1,95 @@
+<template name="buttonsIndex">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton path="index"}}
+    {{/contentFor}}
+    {{#contentFor "headerTitle"}}
+        Buttons Demo
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            {{#ionList}}
+
+                {{#ionItem path="demoButtonsDefault" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Buttons (default)
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsBlock" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Block
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsFull" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Full Width
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsDifferentSizes" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Different Sizes
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsOutlined" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Outlined
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsClear" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Clear
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsIcons" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Icons
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsHeadersFooters" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Headers/Footers
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsHeadersFootersClear" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Clear Headers/Footers
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+
+                {{#ionItem path="demoButtonsBar" class="item-icon-left item-icon-right"}}
+                    {{#ionItemContent}}
+                        {{> ionIcon icon="android-checkbox-blank" class="assertive"}}
+                        Buttons Bar
+                        {{> ionIcon icon="ios-arrow-right"}}
+                    {{/ionItemContent}}
+                {{/ionItem}}
+            {{/ionList}}
+        {{/ionContent}}
+    {{/ionView}}
+</template>
