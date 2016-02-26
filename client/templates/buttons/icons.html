@@ -1,6 +1,9 @@
-<template name="demoButtonsIcons">
+<template name="buttonsIcons">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton}}
+    {{/contentFor}}
     {{#contentFor "headerTitle"}}
-        <h1 class="title">Button Icons</h1>
+        Button Icons
     {{/contentFor}}
 
     {{#ionView}}

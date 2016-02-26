@@ -18,15 +18,16 @@ Router.map(function() {
   this.route('backdrop');
 
   this.route('buttons');
-  this.route('demoButtonsBlock', { path: 'buttons/block' });
-  this.route('demoButtonsFull', { path: 'buttons/full' });
-  this.route('demoButtonsDifferentSizes', { path: 'buttons/different-sizes' });
-  this.route('demoButtonsOutlined', { path: 'buttons/outlined' });
-  this.route('demoButtonsClear', { path: 'buttons/clear' });
-  this.route('demoButtonsIcons', { path: 'buttons/icons' });
-  this.route('demoButtonsHeadersFooters', { path: 'buttons/headers-footers' });
-  this.route('demoButtonsHeadersFootersClear', { path: 'buttons/headers-footers/clear' });
-  this.route('demoButtonsBar', { path: 'buttons/bar' });
+  this.route('buttons.default', { path: 'buttons/default' });
+  this.route('buttons.block', { path: 'buttons/block' });
+  this.route('buttons.full', { path: 'buttons/full' });
+  this.route('buttons.differentSizes', { path: 'buttons/different-sizes' });
+  this.route('buttons.outlined', { path: 'buttons/outlined' });
+  this.route('buttons.clear', { path: 'buttons/clear' });
+  this.route('buttons.icons', { path: 'buttons/icons' });
+  this.route('buttons.headersFooters', { path: 'buttons/headers-footers' });
+  this.route('buttons.headersFootersClear', { path: 'buttons/headers-footers/clear' });
+  this.route('buttons.bar', { path: 'buttons/bar' });
 
   this.route('content');
   this.route('forms', {
@@ -36,9 +37,12 @@ Router.map(function() {
       };
     }
   });
-  this.route('footer');
-  this.route('header');
   this.route('headersFooters');
+  this.route('headersFooters.header', { path: 'headersFooters/header' ,layoutTemplate: "simpleLayout"});
+  this.route('headersFooters.footer', { path: 'headersFooters/footer' ,layoutTemplate: "simpleLayout"});
+  this.route('headersFooters.defaultCenterAlign', { path: 'headersFooters/defaultCenterAlign' ,layoutTemplate: "simpleLayout"});
+  this.route('headersFooters.rightAlign', { path: 'headersFooters/rightAlign' ,layoutTemplate: "simpleLayout"});
+  this.route('headersFooters.leftAlign', { path: 'headersFooters/leftAlign' ,layoutTemplate: "simpleLayout"});
 
   this.route('lists');
   this.route('demoListsDividers', { path: 'lists/dividers' });

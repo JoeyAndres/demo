@@ -1,6 +1,6 @@
-<template name="demoButtonsHeadersFooters">
+<template name="buttonsHeadersFooters">
     {{#contentFor "headerTitle"}}
-        <h1 class="title">Headers/Footers Buttons</h1>
+        Headers/Footers Buttons
     {{/contentFor}}
 
     {{#contentFor "headerButtonRight"}}
@@ -10,4 +10,10 @@
     {{#contentFor "headerButtonLeft"}}
         <button class="button button-stable">Delete</button>
     {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+            <a href="{{pathFor 'buttons'}}" class="button button-stable" data-nav-direction="back">{{> ionIcon icon="ios-arrow-back"}} Back</a>
+        {{/ionContent}}
+    {{/ionView}}
 </template>

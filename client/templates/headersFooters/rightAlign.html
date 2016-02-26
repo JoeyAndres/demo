@@ -1,0 +1,27 @@
+<template name="headersFootersRightAlign">
+  {{> ionHeaderBar class="bar-assertive" alignTitle="right"}}
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+      Right Align Header
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionSubheaderBar}}
+      <h2 class="title">Subheader</h2>
+    {{/ionSubheaderBar}}
+
+    {{#ionContent}}
+      <div class="padding">
+        Content goes here
+      </div>
+    {{/ionContent}}
+
+    {{>ionFooterBar class="bar-dark" alignTitle="right"}}
+    {{#contentFor "footerTitle"}}
+        Right Align Footer
+    {{/contentFor}}
+  {{/ionView}}
+
+</template>

@@ -1,0 +1,27 @@
+<template name="headersFootersDefaultCenterAlign">
+  {{> ionHeaderBar class="bar-assertive"}}
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+      Default (Center) Align Header
+  {{/contentFor}}
+
+  {{#ionView}}
+    {{#ionSubheaderBar}}
+      <h2 class="title">Subheader</h2>
+    {{/ionSubheaderBar}}
+
+    {{#ionContent}}
+      <div class="padding">
+        Content goes here
+      </div>
+    {{/ionContent}}
+
+    {{>ionFooterBar class="bar-dark"}}
+    {{#contentFor "footerTitle"}}
+        Default (Center) Align Footer
+    {{/contentFor}}
+  {{/ionView}}
+
+</template>

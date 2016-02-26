@@ -1,6 +1,9 @@
-<template name="demoButtonsOutlined">
+<template name="buttonsOutlined">
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton}}
+    {{/contentFor}}
     {{#contentFor "headerTitle"}}
-        <h1 class="title">Outlined Button</h1>
+        Outlined Button
     {{/contentFor}}
 
     {{#ionView}}
