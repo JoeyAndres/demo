@@ -3,9 +3,9 @@
   {{#contentFor "headerButtonLeft"}}
     <button class="button button-clear pull-left" data-ion-menu-toggle="left">
       {{#if isAndroid}}
-        {{> ionIcon icon='android-more-vertical'}}
+        <i class="icon ion-android-more-vertical"></i>
       {{else}}
-        {{> ionIcon icon='navicon'}}
+        <i class="icon ion-navicon"></i>
       {{/if}}
     </button>
   {{/contentFor}}
@@ -13,9 +13,9 @@
     <h1 class="title">Side Menu</h1>
     <button class="button button-clear pull-right" data-ion-menu-toggle="right">
       {{#if isAndroid}}
-        {{> ionIcon icon='android-more-vertical'}}
+        <i class="icon ion-android-more-vertical"></i>
       {{else}}
-        {{> ionIcon icon='navicon'}}
+        <i class="icon ion-navicon"></i>
       {{/if}}
     </button>
   {{/contentFor}}
@@ -24,7 +24,7 @@
     {{#ionContent}}
       <div class="padding">
         <a href="{{pathFor 'index'}}" class="button button-large button-stable" data-nav-direction="back">
-          {{> ionIcon icon='ios-arrow-back'}}
+          <i class="icon ion-ios-arrow-back"></i>
           Back to Demo
         </a>
       </div>
