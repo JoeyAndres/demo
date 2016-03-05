@@ -19,7 +19,7 @@ ejson
 anti:fake
 matb33:collection-hooks
 aldeed:collection2
-fourseven:scss@3.3.3
+fourseven:scss@3.4.1
 iron:router
 aldeed:simple-schema
 aldeed:autoform
@@ -28,4 +28,4 @@ useraccounts:ionic
 accounts-password
 
 reactive-var
-jandres:ionic@0.1.52
+jandres:ionic@0.1.54
