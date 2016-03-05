@@ -49,7 +49,7 @@ iron:location@1.0.9
 iron:middleware-stack@1.0.9
 iron:router@1.0.9
 iron:url@1.0.9
-jandres:ionic@0.1.54
+jandres:ionic@0.1.55
 jandres:meteoric-sass@1.2.5
 jandres:snapjs@2.0.9
 jandres:template-extension@4.0.5-alpha1
