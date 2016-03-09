@@ -1,7 +1,7 @@
 <template name="sideMenu">
 
   {{#contentFor "headerButtonLeft"}}
-    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+    <button class="button button-clear pull-left" menu-toggle="left">
       {{#if isAndroid}}
         <i class="icon ion-android-more-vertical"></i>
       {{else}}
@@ -11,7 +11,7 @@
   {{/contentFor}}
   {{#contentFor "headerTitle"}}
     <h1 class="title">Side Menu</h1>
-    <button class="button button-clear pull-right" data-ion-menu-toggle="right">
+    <button class="button button-clear pull-right" menu-toggle="right">
       {{#if isAndroid}}
         <i class="icon ion-android-more-vertical"></i>
       {{else}}

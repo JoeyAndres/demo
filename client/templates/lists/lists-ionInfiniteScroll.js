@@ -24,7 +24,7 @@ Template.demoListsionInfiniteScroll.helpers({
                 });
                 templateInstance.items.set(new_items);
                 $(window).trigger('scroll.infiniteScrollComplete');
-            }, 1);  // 500ms, to emulate loading time.
+            }, 500);  // 500ms, to emulate loading time.
         };
     },
 
