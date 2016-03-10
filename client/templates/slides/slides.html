@@ -1,0 +1,33 @@
+<template name="slides">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Slide Box</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+      <!--
+      scroll=false will not make ionContent wrap the content, expanding to the viewport's height (excluding the header).
+      -->
+    {{#ionContent scroll=false}}
+      {{#ionSlides style="height: 100%"}}
+        {{#ionSlidePage}}
+            <div style="background-color: blue; height: 100%;" class="box blue text-center">
+                <h1 style="color: white">BLUE</h1>
+            </div>
+        {{/ionSlidePage}}
+        {{#ionSlidePage}}
+            <div style="background-color: yellow; height: 100%;" class="box yellow text-center">
+                <h1 style="color: white">YELLOW</h1>
+            </div>
+        {{/ionSlidePage}}
+        {{#ionSlidePage}}
+            <div style="background-color: pink; height: 100%;" class="box pink text-center">
+                <h1 style="color: white">PINK</h1>
+            </div>
+        {{/ionSlidePage}}
+      {{/ionSlides}}
+    {{/ionContent}}
+  {{/ionView}}
+</template>
