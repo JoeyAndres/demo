@@ -1,34 +1,24 @@
 <template name="sideMenu">
+    {{#ionView title="Side Menu"}}
+        {{#ionNavButtons side="left"}}
+            <button class="button button-clear pull-left" ion-menu-toggle="left">
+                <i class="icon ion-navicon"></i>
+            </button>
+        {{/ionNavButtons}}
+        {{#ionNavButtons side="right"}}
+            <button class="button button-clear pull-right" ion-menu-toggle="right">
+                <i class="icon ion-navicon"></i>
+            </button>
+        {{/ionNavButtons}}
 
-  {{#contentFor "headerButtonLeft"}}
-    <button class="button button-clear pull-left" menu-toggle="left">
-      {{#if isAndroid}}
-        <i class="icon ion-android-more-vertical"></i>
-      {{else}}
-        <i class="icon ion-navicon"></i>
-      {{/if}}
-    </button>
-  {{/contentFor}}
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">Side Menu</h1>
-    <button class="button button-clear pull-right" menu-toggle="right">
-      {{#if isAndroid}}
-        <i class="icon ion-android-more-vertical"></i>
-      {{else}}
-        <i class="icon ion-navicon"></i>
-      {{/if}}
-    </button>
-  {{/contentFor}}
-
-  {{#ionView}}
-    {{#ionContent}}
-      <div class="padding">
-        <a href="{{pathFor 'index'}}" class="button button-large button-stable" data-nav-direction="back">
-          <i class="icon ion-ios-arrow-back"></i>
-          Back to Demo
-        </a>
-      </div>
-    {{/ionContent}}
-  {{/ionView}}
+        {{#ionContent}}
+            <div class="padding">
+                <a href="{{pathFor 'index'}}" class="button button-large button-stable" data-nav-direction="back">
+                    <i class="icon ion-ios-arrow-back"></i>
+                    Back to Demo
+                </a>
+            </div>
+        {{/ionContent}}
+    {{/ionView}}
 
 </template>

@@ -1,13 +1,6 @@
 <template name="buttonsDefault">
-    {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton}}
-    {{/contentFor}}
-        {{#contentFor "headerTitle"}}
-            Defaults Buttons
-        {{/contentFor}}
-
-        {{#ionView}}
-            {{#ionContent}}
+    {{#ionView title="Defaults Buttons"}}
+        {{#ionContent}}
             <div class="padding demo-buttons">
                 <button class="button">Default</button>
                 <br>
@@ -21,14 +14,14 @@
                 <br>
                 <button class="button button-balanced">button-balanced</button>
                 <br>
-               <button class="button button-energized">button-energized</button>
+                <button class="button button-energized">button-energized</button>
                 <br>
-               <button class="button button-assertive">button-assertive</button>
+                <button class="button button-assertive">button-assertive</button>
                 <br>
                 <button class="button button-royal">button-royal</button>
                 <br>
                 <button class="button button-dark">button-dark</button>
             </div>
-            {{/ionContent}}
-        {{/ionView}}
-    </template>
+        {{/ionContent}}
+    {{/ionView}}
+</template>

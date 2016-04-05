@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "![](http://f.cl.ly/items/391y4708420P0H001k1G/meteoric.png)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeyAndres/demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeyAndres/demo/issues"
+  },
+  "homepage": "https://github.com/JoeyAndres/demo#readme",
+  "devDependencies": {
+    "fibre": "^1.1.2"
+  }
+}

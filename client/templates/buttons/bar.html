@@ -1,12 +1,5 @@
 <template name="buttonsBar">
-    {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton}}
-    {{/contentFor}}
-    {{#contentFor "headerTitle"}}
-        Button Bar
-    {{/contentFor}}
-
-    {{#ionView}}
+    {{#ionView title="Button Bar"}}
         {{#ionContent}}
             <div class="padding demo-buttons">
                 <div class="button-bar">

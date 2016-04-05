@@ -2,32 +2,26 @@
     {{#contentFor "headerButtonLeft"}}
         <button id="button-delete" class="button button-icon icon ion-ios-minus-outline"></button>
     {{/contentFor}}
-    {{#contentFor "headerTitle"}}
-        <h1 class="title">Lists</h1>
-    {{/contentFor}}
     {{#contentFor "headerButtonRight"}}
         <button class="button button-clear" id="button-reorder">Reorder</button>
     {{/contentFor}}
 
-    {{#ionView}}
+    {{#ionView title="Lists"}}
         {{#ionContent}}
             {{#ionList onReorder=onReorder showDelete=deletable showReorder=sortable canSwipe=true}}
                 {{#each items}}
                     {{#ionItem class="item-avatar-left"}}
-                        {{#ionItemContent}}
-                            <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
-                            <h2>John Smith {{this}}</h2>
-                            <p>(555) 555-1212</p>
-                        {{/ionItemContent}}
+                        <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
+                        <h2>John Smith {{this}}</h2>
+                        <p>(555) 555-1212</p>
 
-                        {{#ionItemOptions}}
-                            {{#ionOptionButton class="button-info"}}
-                                Share
-                            {{/ionOptionButton}}
-                            {{#ionOptionButton class="button-assertive"}}
-                                Edit
-                            {{/ionOptionButton}}
-                        {{/ionItemOptions}}
+
+                        {{#ionOptionButton class="button-info"}}
+                            Share
+                        {{/ionOptionButton}}
+                        {{#ionOptionButton class="button-assertive"}}
+                            Edit
+                        {{/ionOptionButton}}
 
                         {{#ionDeleteButton class="ion-minus-circled"}}{{/ionDeleteButton}}
                         {{#ionReorderButton class="ion-navicon"}}{{/ionReorderButton}}

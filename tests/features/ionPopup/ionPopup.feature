@@ -2,7 +2,7 @@ Feature: As a user I should be able to use ionPopup as popup dialog.
   Background:
     Given "I" navigate to "/popup"
 
-  @watch
+  #@watch
   Scenario: Use normal popup
     Given "I" click "//button[contains(., 'Show Popup')]"
 
@@ -13,7 +13,7 @@ Feature: As a user I should be able to use ionPopup as popup dialog.
     Then "I" should not see "//*[contains(., 'A Popup')]"
     And "I" should not see "//*[contains(., 'quick popup.')]"
 
-  @watch
+  #@watch
   Scenario: Confirm popup.
     Given "I" click "//button[contains(., 'Show Confirm')]"
 
@@ -36,7 +36,7 @@ Feature: As a user I should be able to use ionPopup as popup dialog.
     Then "I" should not see "//*[contains(., 'Are you sure?')]"
     And "I" should not see "//*[contains(., 'Are you really sure?')]"
 
-  @watch
+  #@watch
   Scenario: Alert popup
     Given "I" click "//button[contains(., 'Show Alert')]"
 
@@ -47,7 +47,7 @@ Feature: As a user I should be able to use ionPopup as popup dialog.
     Then "I" should not see "//*[contains(., 'An Alert')]"
     And "I" should not see "//*[contains(., 'This is an alert!')]"
 
-  @watch
+  #@watch
   Scenario: Prompt popup
     Given "I" click "//button[contains(., 'Show Prompt')]"
 

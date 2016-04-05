@@ -8,3 +8,9 @@ Template.lists.helpers({
     return Template.instance().items.get();
   }
 });
+
+Template.lists.events({
+  'click button': function(e) {
+    console.log('asdf');
+  }
+});

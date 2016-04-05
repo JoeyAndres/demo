@@ -2,9 +2,6 @@
   {{#contentFor "headerButtonLeft"}}
     {{>ionNavBackButton path="index"}}
   {{/contentFor}}
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">Popover</h1>
-  {{/contentFor}}
   {{#contentFor "headerButtonRight"}}
     <button class="button button-clear" data-ion-popover="_myPopover">
       {{#if isAndroid}}
@@ -15,7 +12,7 @@
     </button>
   {{/contentFor}}
 
-  {{#ionView}}
+  {{#ionView title="Popover"}}
     {{#ionContent}}
       <div class="padding">
         Click the more info icon in the top right.

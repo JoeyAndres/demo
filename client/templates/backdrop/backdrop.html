@@ -1,13 +1,5 @@
 <template name="backdrop">
-  {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton path="index"}}
-  {{/contentFor}}
-
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">Backdrop</h1>
-  {{/contentFor}}
-
-  {{#ionView}}
+  {{#ionView title="Backdrop"}}
     {{#ionContent}}
       <div class="padding">
         <button class="button button-large button-stable" data-action="showBackdrop">

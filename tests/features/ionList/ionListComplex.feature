@@ -2,7 +2,7 @@ Feature: As a user I should be able to use complex ion list features.
   Background:
     Given "I" navigate to "/lists/complex"
 
-  @watch
+  #@watch
   Scenario: See list items (sanity check this time).
     Then "I" should see "//*[contains(., 'John Smith 1')]"
     Then "I" should see "//*[contains(., 'John Smith 2')]"
@@ -25,7 +25,7 @@ Feature: As a user I should be able to use complex ion list features.
     Then "I" should see "//*[contains(., 'John Smith 19')]"
     Then "I" should see "//*[contains(., 'John Smith 20')]"
 
-  @watch
+  #@watch
   Scenario: Reorder arbitrary items around.
     Given "I" click "//button[contains(., 'Reorder')]"
     Then "I" should see ".item-reorder"

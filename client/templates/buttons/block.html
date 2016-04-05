@@ -1,12 +1,5 @@
 <template name="buttonsBlock">
-    {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton}}
-    {{/contentFor}}
-    {{#contentFor "headerTitle"}}
-        Block Button
-    {{/contentFor}}
-
-    {{#ionView}}
+    {{#ionView title="Block Button"}}
         {{#ionContent}}
             <div class="padding">
                 <button class="button button-block">Default</button>

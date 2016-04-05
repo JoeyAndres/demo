@@ -67,4 +67,9 @@ Router.map(function() {
   this.route('tabs', { template: 'tabs', path: '/tabs/:tab' });
   this.route('userAccounts');
   this.route('radio');
+
+  // Tests.
+  // Test::ionScroll
+  this.route('scrollDirectionX');
+  this.route('scrollDirectionY');
 });
