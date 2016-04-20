@@ -26,6 +26,6 @@ useraccounts:ionic
 accounts-password
 
 reactive-var
-jandres:ionic@1.24.0-alpha.16
+jandres:ionic@1.24.0-alpha.17
 standard-minifier-css
 standard-minifier-js
