@@ -1,20 +1,20 @@
 Template.popup.events({
   'click [data-action="showPopup"]': function(event, template) {
-    IonPopup.show({
+    $ionicPopup.show({
       title: 'A Popup',
       template: 'Here\'s a quick popup.',
       buttons: [{
         text: 'Close me',
         type: 'button-assertive',
         onTap: function() {
-          IonPopup.close();
+          $ionicPopup.close();
         }
       }]
     });
   },
 
   'click [data-action="showAlert"]': function(event, template) {
-    IonPopup.alert({
+    $ionicPopup.alert({
       title: 'An Alert',
       template: 'This is an alert!',
       okText: 'Got It.'
@@ -22,7 +22,7 @@ Template.popup.events({
   },
 
   'click [data-action="showConfirm"]': function(event, template) {
-    IonPopup.confirm({
+    $ionicPopup.confirm({
       title: 'Are you sure?',
       template: 'Are you <strong>really</strong> sure?',
       onOk: function() {
@@ -35,7 +35,7 @@ Template.popup.events({
   },
 
   'click [data-action="showPrompt"]': function(event, template) {
-    IonPopup.prompt({
+    $ionicPopup.prompt({
       title: 'Security Check',
       template: 'Please enter your password',
       okText: 'Submit',

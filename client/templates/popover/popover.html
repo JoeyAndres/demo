@@ -1,22 +1,15 @@
 <template name="popover">
-  {{#contentFor "headerButtonLeft"}}
-    {{>ionNavBackButton path="index"}}
-  {{/contentFor}}
-  {{#contentFor "headerButtonRight"}}
-    <button class="button button-clear" data-ion-popover="_myPopover">
-      {{#if isAndroid}}
-          <i class="icon ionic-android-more-vertical"></i>
-      {{else}}
-          <i class="icon ionic-more"></i>
-      {{/if}}
-    </button>
-  {{/contentFor}}
+    {{#ionView title="Popover"}}
+        {{#ionNavButtons side="right"}}
+            <button class="button button-clear" data-ion-popover="_myPopover">
+                <i class="icon ion-navicon"></i>
+            </button>
+        {{/ionNavButtons}}
 
-  {{#ionView title="Popover"}}
-    {{#ionContent}}
-      <div class="padding">
-        Click the more info icon in the top right.
-      </div>
-    {{/ionContent}}
-  {{/ionView}}
+        {{#ionContent}}
+            <div class="padding">
+                Click the more info icon in the top right.
+            </div>
+        {{/ionContent}}
+    {{/ionView}}
 </template>

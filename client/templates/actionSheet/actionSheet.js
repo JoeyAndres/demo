@@ -1,6 +1,6 @@
 Template.actionSheet.events({
   'click [data-action=showActionSheet]': function (event, template) {
-    IonActionSheet.show({
+    $ionicActionSheet.show({
       titleText: 'ActionSheet Example',
       buttons: [
         { text: 'Share <i class="icon ion-share"></i>' },

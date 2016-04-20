@@ -1,5 +1,5 @@
 <template name="layout">
-    {{#ionBody}}
+    <body>
         {{#ionSideMenus}}
 
             {{#ionSideMenu}}
@@ -8,7 +8,7 @@
                 </div>
                 <div class="content has-header">
                     <div class="list">
-                        <div class="item item-icon-right" ion-menu-close>
+                        <div class="item item-icon-right" menu-close>
                             Close Me <i class="icon ionic-ios-arrow-right"></i>
                         </div>
                     </div>
@@ -25,12 +25,12 @@
             {{/ionSideMenuContent}}
 
             {{#ionSideMenu side="right"}}
-                <div class="bar bar-header bar-dark" ion-expose-aside-when="large">
+                <div class="bar bar-header bar-dark" expose-aside-when="large">
                     <h1 class="title">Right Menu</h1>
                 </div>
                 <div class="content has-header">
                     <div class="list">
-                        <div class="item item-icon-left" ion-menu-close>
+                        <div class="item item-icon-left" menu-close>
                             <i class="icon ionic-ios-arrow-left"></i> Close Me
                         </div>
                     </div>
@@ -38,5 +38,5 @@
             {{/ionSideMenu}}
 
         {{/ionSideMenus}}
-    {{/ionBody}}
+    </body>
 </template>

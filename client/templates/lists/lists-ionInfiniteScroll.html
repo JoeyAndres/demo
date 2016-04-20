@@ -14,21 +14,9 @@
                         <img src="https://randomuser.me/api/portraits/thumb/men/27.jpg">
                         <h2>John Smith {{this}}</h2>
                         <p>(555) 555-1212</p>
-
-
-                        {{#ionOptionButton class="button-info"}}
-                            Share
-                        {{/ionOptionButton}}
-                        {{#ionOptionButton class="button-assertive"}}
-                            Edit
-                        {{/ionOptionButton}}
-
-                        {{#ionDeleteButton class="ion-minus-circled"}}{{/ionDeleteButton}}
-                        {{#ionReorderButton class="ion-navicon"}}{{/ionReorderButton}}
                     {{/ionItem}}
                 {{/each}}
             {{/ionList}}
-
             {{> ionInfiniteScroll onInfinite=onInfinite distance="10%" spinner="android" immediateCheck=true enable=hasMore}}
         {{/ionContent}}
     {{/ionView}}

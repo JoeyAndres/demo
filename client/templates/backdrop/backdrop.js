@@ -1,9 +1,9 @@
 Template.backdrop.events({
   'click [data-action=showBackdrop]': function (event, template) {
-    IonBackdrop.retain();
+    $ionicBackdrop.retain();
 
     Meteor.setTimeout(function () {
-      IonBackdrop.release();
+      $ionicBackdrop.release();
     }, 1000);
   }
 });
