@@ -67,6 +67,8 @@ Router.map(function() {
   this.route('tabs', { template: 'tabs', path: '/tabs/:tab' });
   this.route('userAccounts');
   this.route('radio');
+  this.route('demoCheckbox', { path: 'checkbox' });
+  this.route('demoToggle', { path: 'toggle' });
 
   // Tests.
   // Test::ionScroll

@@ -1,14 +1,10 @@
 <template name="radio">
-    {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton path="index"}}
-    {{/contentFor}}
-
-    {{#ionView title="Loading"}}
+    {{#ionView title="Radio"}}
         {{#ionContent}}
             <div class="padding">
                 <form name="radio_button_form" id="radio-button-form">
-                    {{#ionRadio name="test"}}Test Content 1{{/ionRadio}}
-                    {{#ionRadio name="test"}}Test Content 2{{/ionRadio}}
+                    {{#ionRadio name="test_radio" checked=true}}Test Content 1{{/ionRadio}}
+                    {{#ionRadio name="test_radio"}}Test Content 2{{/ionRadio}}
                 </form>
             </div>
         {{/ionContent}}
