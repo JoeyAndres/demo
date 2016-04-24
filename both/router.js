@@ -35,6 +35,48 @@ Router.map(function() {
   this.route('headersFooters.rightAlign', { path: 'headersFooters/rightAlign' ,layoutTemplate: "simpleLayout"});
   this.route('headersFooters.leftAlign', { path: 'headersFooters/leftAlign' ,layoutTemplate: "simpleLayout"});
 
+  // Footers.
+  this.route('headersFooters.footer.basic', {
+    path: 'headersFooters/footer/basic',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.footer.alignTitle', {
+    path: 'headersFooters/footer/alignTitle',
+    template: 'headersFootersFooterAlignTitle',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.footer.buttons', {
+    path: 'headersFooters/footer/buttons',
+    template: 'headersFootersFooterButtons',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.footer.subfooter', {
+    path: 'headersFooters/footer/subfooter',
+    template: 'headersFootersFooterSubFooter',
+    layoutTemplate: "simpleLayout"
+  });
+
+  // Headers.
+  this.route('headersFooters.header.basic', {
+    path: 'headersFooters/header/basic',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.header.alignTitle', {
+    path: 'headersFooters/header/alignTitle',
+    template: 'headersFootersHeaderAlignTitle',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.header.buttons', {
+    path: 'headersFooters/header/buttons',
+    template: 'headersFootersHeaderButtons',
+    layoutTemplate: "simpleLayout"
+  });
+  this.route('headersFooters.header.subheader', {
+    path: 'headersFooters/header/subheader',
+    template: 'headersFootersHeaderSubHeader',
+    layoutTemplate: "simpleLayout"
+  });
+
   this.route('lists');
   this.route('demoListsDividers', { path: 'lists/dividers' });
   this.route('demoListsIcons', { path: 'lists/icons' });

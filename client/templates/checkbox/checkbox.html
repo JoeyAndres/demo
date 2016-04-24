@@ -1,9 +1,34 @@
 <template name="demoCheckbox">
-    {{#ionView title="Checkbox"}}
-        {{#ionContent}}
+    {{#ionView title="Checkboxes"}}
+        {{#ionContent padding=false}}
             <div class="padding">
+
                 <form name="radio_button_form" id="checkbox-button-form">
-                    {{#ionCheckbox}}Test content{{/ionCheckbox}}
+                    {{#ionCheckbox model=html5_checkbox_model
+                                   name="html5_checkbox" value=true}}HTML5{{/ionCheckbox}}
+                    {{#ionCheckbox model=css3_checkbox_model
+                                   name="css3_checkbox"
+                                   trueValue="custom true value"
+                                   falseValue="custom false value"}}CSS3{{/ionCheckbox}}
+                    {{#ionCheckbox model=javascript_checkbox_model
+                                   name="javascript_checkbox"}}Javascript{{/ionCheckbox}}
+
+                    <pre style="font-size: 1.2em;">
+[
+    {
+        "text": "HTML5",
+        "checked": <span id="html5_checkbox_model">{{html5_checkbox_model_value}}</span>
+    },
+    {
+        "text": "CSS3",
+        "checked": <span id="css3_checkbox_model">{{css3_checkbox_model_value}}</span>
+    },
+    {
+        "text": "Javascript",
+        "checked": <span id="javascript_checkbox_model">{{javascript_checkbox_model_value}}</span>
+    }
+]
+                    </pre>
                 </form>
             </div>
         {{/ionContent}}
