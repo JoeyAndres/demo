@@ -1,6 +1,6 @@
 import { i_go_to, i_click, i_wait, i_should_see, i_should_not_see, there_should_be, there_should_not_be } from './lib/lib';
 
-describe('ionCheckbox @watch', function() {
+describe('ionRadio', function() {
     beforeEach(() => {
         i_go_to('/radio');
     });

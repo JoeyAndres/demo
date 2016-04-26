@@ -2,8 +2,12 @@
     {{#ionView title="Toggle"}}
         {{#ionContent}}
             <div class="padding">
-                <form name="radio_button_form" id="toggle-button-form">
-                    {{#ionToggle}}Test content{{/ionToggle}}
+                <form name="toggle_button_form" id="toggle-button-form">
+                    {{#ionToggle name="test_toggle" model=toggleModel value="custom toggle value"}}Test content{{/ionToggle}}
+
+                    <div class="item item-icon-left">
+                        <i class="ion-android-alert icon"></i> Model Value: <b id="model-value">{{toggleModel_value}}</b>
+                    </div>
                 </form>
             </div>
         {{/ionContent}}
