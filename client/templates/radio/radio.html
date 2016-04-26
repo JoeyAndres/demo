@@ -3,8 +3,19 @@
         {{#ionContent}}
             <div class="padding">
                 <form name="radio_button_form" id="radio-button-form">
-                    {{#ionRadio name="test_radio" checked=true}}Test Content 1{{/ionRadio}}
-                    {{#ionRadio name="test_radio"}}Test Content 2{{/ionRadio}}
+                    {{#ionRadio name="test_radio" checked=true value="test value 1" model=radioModel }}
+                        Test Content 1
+                    {{/ionRadio}}
+                    {{#ionRadio name="test_radio" value="test value 2" model=radioModel }}
+                        Test Content 2
+                    {{/ionRadio}}
+                    {{#ionRadio name="test_radio" value="test value 3" model=radioModel }}
+                        Test Content 3
+                    {{/ionRadio}}
+
+                    <div class="item item-icon-left">
+                        <i class="ion-android-alert icon"></i> Model Value: <b id="model-value">{{radioModel_value}}</b>
+                    </div>
                 </form>
             </div>
         {{/ionContent}}
