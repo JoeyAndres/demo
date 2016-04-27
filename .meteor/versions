@@ -49,11 +49,11 @@ iron:location@1.0.11
 iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
-jandres:ionic@1.2.4-beta.1
+jandres:ionic@1.2.4-beta.2
 jandres:meteoric-sass@1.2.5
 jandres:template-attribute-directive@0.1.0-beta.1
 jandres:template-extension@4.0.7-alpha3
-jandres:template-scope@0.1.0-beta.1
+jandres:template-scope@0.1.0-beta.2
 jquery@1.11.8
 livedata@1.0.18
 localstorage@1.0.9
