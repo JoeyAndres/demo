@@ -4,7 +4,7 @@ Router.configure({
 
 Router.map(function() {
   // todo: prepend all templates with 'demo'.
-  this.route('index', {path: '/'});
+  this.route('index', { path: '/' });
   this.route('actionSheet');
   this.route('backdrop');
 
@@ -29,52 +29,41 @@ Router.map(function() {
     }
   });
   this.route('headersFooters');
-  this.route('headersFooters.header', { path: 'headersFooters/header' ,layoutTemplate: "simpleLayout"});
-  this.route('headersFooters.footer', { path: 'headersFooters/footer' ,layoutTemplate: "simpleLayout"});
-  this.route('headersFooters.defaultCenterAlign', { path: 'headersFooters/defaultCenterAlign' ,layoutTemplate: "simpleLayout"});
-  this.route('headersFooters.rightAlign', { path: 'headersFooters/rightAlign' ,layoutTemplate: "simpleLayout"});
-  this.route('headersFooters.leftAlign', { path: 'headersFooters/leftAlign' ,layoutTemplate: "simpleLayout"});
+  this.route('headersFooters.header', { path: 'headersFooters/header'});
+  this.route('headersFooters.footer', { path: 'headersFooters/footer'});
 
   // Footers.
   this.route('headersFooters.footer.basic', {
-    path: 'headersFooters/footer/basic',
-    layoutTemplate: "simpleLayout"
+    path: 'headersFooters/footer/basic'
   });
   this.route('headersFooters.footer.alignTitle', {
     path: 'headersFooters/footer/alignTitle',
-    template: 'headersFootersFooterAlignTitle',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersFooterAlignTitle'
   });
   this.route('headersFooters.footer.buttons', {
     path: 'headersFooters/footer/buttons',
-    template: 'headersFootersFooterButtons',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersFooterButtons'
   });
   this.route('headersFooters.footer.subfooter', {
     path: 'headersFooters/footer/subfooter',
-    template: 'headersFootersFooterSubFooter',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersFooterSubFooter'
   });
 
   // Headers.
   this.route('headersFooters.header.basic', {
-    path: 'headersFooters/header/basic',
-    layoutTemplate: "simpleLayout"
+    path: 'headersFooters/header/basic'
   });
   this.route('headersFooters.header.alignTitle', {
     path: 'headersFooters/header/alignTitle',
-    template: 'headersFootersHeaderAlignTitle',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersHeaderAlignTitle'
   });
   this.route('headersFooters.header.buttons', {
     path: 'headersFooters/header/buttons',
-    template: 'headersFootersHeaderButtons',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersHeaderButtons'
   });
   this.route('headersFooters.header.subheader', {
     path: 'headersFooters/header/subheader',
-    template: 'headersFootersHeaderSubHeader',
-    layoutTemplate: "simpleLayout"
+    template: 'headersFootersHeaderSubHeader'
   });
 
   this.route('lists');

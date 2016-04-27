@@ -1,8 +1,10 @@
 <template name="headersFootersFooterSubFooter">
-    {{#ionFooterBar class="bar-assertive bar-subfooter"}}
-        <h1 class="title">I'm the footer.</h1>
-    {{/ionFooterBar}}
-    {{#ionFooterBar class="bar-assertive"}}
-        <h1 class="title">Sub footer</h1>
-    {{/ionFooterBar}}
+    {{#ionView}}
+        {{#ionFooterBar class="bar-assertive bar-subfooter"}}
+            <h1 class="title">I'm the footer.</h1>
+        {{/ionFooterBar}}
+        {{#ionFooterBar class="bar-assertive"}}
+            <h1 class="title">Sub footer</h1>
+        {{/ionFooterBar}}
+    {{/ionView}}
 </template>

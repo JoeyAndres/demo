@@ -1,8 +1,4 @@
 <template name="headersFooters">
-    {{#contentFor "headerButtonLeft"}}
-        {{>ionNavBackButton path="index"}}
-    {{/contentFor}}
-
     {{#ionView title="Headers/Footers Demo"}}
         {{#ionContent}}
             {{#ionList}}
@@ -14,54 +10,31 @@
                 {{/ionItem}}
 
                 {{#ionItem path="headersFooters.footer" class="item-icon-left item-icon-right"}}
-
                     <i class="icon ion-ios-drag assertive"></i>
                     Footer
                     <i class="icon ion-ios-arrow-right assertive"></i>
-
                 {{/ionItem}}
 
-                {{#ionItem path="headersFooters.defaultCenterAlign" class="item-icon-left item-icon-right"}}
-
-                    <i class="icon ion-ios-drag assertive"></i>}}
-                    Default (Center) Align
+                {{#ionItem path="headersFooters.header.alignTitle" class="item-icon-left item-icon-right"}}
+                    <i class="icon ion-ios-drag assertive"></i>
+                    alignTitle
                     <i class="icon ion-ios-arrow-right assertive"></i>
-
-                {{/ionItem}}
-
-                {{#ionItem path="headersFooters.rightAlign" class="item-icon-left item-icon-right"}}
-
-                    <i class="icon ion-ios-drag assertive"></i>}}
-                    Right Align
-                    <i class="icon ion-ios-arrow-right assertive"></i>
-
-                {{/ionItem}}
-
-                {{#ionItem path="headersFooters.leftAlign" class="item-icon-left item-icon-right"}}
-
-                    <i class="icon ion-ios-drag assertive"></i>}}
-                    Left Align
-                    <i class="icon ion-ios-arrow-right assertive"></i>
-
                 {{/ionItem}}
 
                 <div class="item item-divider">Buttons Related Demo</div>
 
                 {{#ionItem path="buttons.headersFooters" class="item-icon-left item-icon-right"}}
-
-                    <i class="icon ion-ios-drag assertive"></i>}}
+                    <i class="icon ion-ios-drag assertive"></i>
                     Headers/Footers Buttons
                     <i class="icon ion-ios-arrow-right assertive"></i>
-
                 {{/ionItem}}
 
                 {{#ionItem path="buttons.headersFootersClear" class="item-icon-left item-icon-right"}}
-
-                    <i class="icon ion-ios-drag assertive"></i>}}
+                    <i class="icon ion-ios-drag assertive"></i>
                     Clear Headers/Footers Buttons
                     <i class="icon ion-ios-arrow-right assertive"></i>
-
                 {{/ionItem}}
+
             {{/ionList}}
         {{/ionContent}}
     {{/ionView}}

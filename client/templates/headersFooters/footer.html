@@ -1,11 +1,13 @@
 <template name="headersFootersFooter">
-    {{#ionFooterBar class="bar-assertive"}}
-        <div class="buttons">
-            <button class="button">Left Button</button>
-        </div>
-        <h1 class="title">I'm the footer.</h1>
-        <div class="buttons">
-            <button class="button">Right Button</button>
-        </div>
-    {{/ionFooterBar}}
+    {{#ionView}}
+        {{#ionFooterBar class="bar-assertive"}}
+            <div class="buttons">
+                <button class="button">Left Button</button>
+            </div>
+            <h1 class="title">I'm the footer.</h1>
+            <div class="buttons">
+                <button class="button">Right Button</button>
+            </div>
+        {{/ionFooterBar}}
+    {{/ionView}}
 </template>

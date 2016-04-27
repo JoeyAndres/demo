@@ -1,5 +1,11 @@
 <template name="headersFootersHeaderAlignTitle">
-    {{#ionHeaderBar class="bar-assertive" alignTitle="right"}}
-        <h1 class="title">Header alignTitle</h1>
-    {{/ionHeaderBar}}
+    {{#ionView title="alignTitle"}}
+        {{#ionHeaderBar class="bar-assertive" alignTitle="right"}}
+            <h1 class="title">Header alignTitle</h1>
+        {{/ionHeaderBar}}
+
+        {{#ionContent}}
+            Some content!
+        {{/ionContent}}
+    {{/ionView}}
 </template>
