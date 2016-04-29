@@ -42,7 +42,7 @@ Router.map(function() {
   });
   this.route('headersFooters.footer.buttons', {
     path: 'headersFooters/footer/buttons',
-    template: 'headersFootersFooterButtons'
+    template: 'headersFootersFooterButtons',
   });
   this.route('headersFooters.footer.subfooter', {
     path: 'headersFooters/footer/subfooter',
@@ -55,15 +55,18 @@ Router.map(function() {
   });
   this.route('headersFooters.header.alignTitle', {
     path: 'headersFooters/header/alignTitle',
-    template: 'headersFootersHeaderAlignTitle'
+    template: 'headersFootersHeaderAlignTitle',
+    layoutTemplate: 'simpleLayout'
   });
   this.route('headersFooters.header.buttons', {
     path: 'headersFooters/header/buttons',
-    template: 'headersFootersHeaderButtons'
+    template: 'headersFootersHeaderButtons',
+    layoutTemplate: 'simpleLayout'
   });
   this.route('headersFooters.header.subheader', {
     path: 'headersFooters/header/subheader',
-    template: 'headersFootersHeaderSubHeader'
+    template: 'headersFootersHeaderSubHeader',
+    layoutTemplate: 'simpleLayout'
   });
 
   this.route('lists');
