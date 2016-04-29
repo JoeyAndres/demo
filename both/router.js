@@ -16,8 +16,15 @@ Router.map(function() {
   this.route('buttons.outlined', { path: 'buttons/outlined' });
   this.route('buttons.clear', { path: 'buttons/clear' });
   this.route('buttons.icons', { path: 'buttons/icons' });
-  this.route('buttons.headersFooters', { path: 'buttons/headers-footers' });
-  this.route('buttons.headersFootersClear', { path: 'buttons/headers-footers/clear' });
+
+  this.route('buttons.headersFooters', {
+    path: 'buttons/headers-footers',
+    layoutTemplate: 'simpleLayout'
+  });
+  this.route('buttons.headersFootersClear', {
+    path: 'buttons/headers-footers/clear',
+    layoutTemplate: 'simpleLayout'
+  });
   this.route('buttons.bar', { path: 'buttons/bar' });
 
   this.route('content');
@@ -29,7 +36,10 @@ Router.map(function() {
     }
   });
   this.route('headersFooters');
-  this.route('headersFooters.header', { path: 'headersFooters/header'});
+  this.route('headersFooters.header', {
+    path: 'headersFooters/header',
+    layoutTemplate: 'simpleLayout'
+  });
   this.route('headersFooters.footer', { path: 'headersFooters/footer'});
 
   // Footers.
@@ -42,7 +52,7 @@ Router.map(function() {
   });
   this.route('headersFooters.footer.buttons', {
     path: 'headersFooters/footer/buttons',
-    template: 'headersFootersFooterButtons',
+    template: 'headersFootersFooterButtons'
   });
   this.route('headersFooters.footer.subfooter', {
     path: 'headersFooters/footer/subfooter',
@@ -51,7 +61,8 @@ Router.map(function() {
 
   // Headers.
   this.route('headersFooters.header.basic', {
-    path: 'headersFooters/header/basic'
+    path: 'headersFooters/header/basic',
+    layoutTemplate: 'simpleLayout'
   });
   this.route('headersFooters.header.alignTitle', {
     path: 'headersFooters/header/alignTitle',
