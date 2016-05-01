@@ -2,12 +2,11 @@
 
 # Meteor Ionic Demo
 
-This is a demo of the various [Meteoric](https://github.com/meteoric) packages:
+This is a demo of the various [Meteoric](https://github.com/meteoric124) packages:
 
-- [meteoric:ionic](https://github.com/meteoric/meteor-ionic)
-- [meteoric:ionic-sass](https://github.com/meteoric/ionic-sass)
-- [meteoric:ionicons-sass](https://github.com/meteoric/ionicons-sass)
-- [meteoric:autoform-ionic](https://github.com/meteoric/autoform-ionic)
+- [meteoric124:meteoric](https://github.com/meteoric124/meteoric)
+- [meteoric124:meteoric-sass](https://github.com/meteoric/ionic-sass)
+- [meteoric:autoform-ionic](https://github.com/meteoric124/meteoric-sass)
 - [meteoric:useraccounts-ionic](https://github.com/meteoric/useraccounts-ionic)
 
 See it in action here: [http://meteoric-demo.com/](http://meteoric-demo.com/)
@@ -20,8 +19,9 @@ or simply that we want new features to behave as we expected.
 ## To run:
 
 ```bash
-npm install chimp
-~/node\_modules/chimp/bin/chimp --ddp=http://localhost:3000  # Change this to whatever directory chimp was installed.
+npm install -g chimp
+# cd <meteoric-demo>/tests
+chimp --jasmine --ddp=http://localhost:3000
 ```
 
 ## License
