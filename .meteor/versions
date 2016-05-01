@@ -59,8 +59,8 @@ matb33:collection-hooks@0.8.1
 mdg:validation-error@0.2.0
 meteor@1.1.14
 meteor-base@1.0.4
-meteoric124:meteoric@1.2.4-beta.10
-meteoric124:template-assert-parent@0.1.0-alpha.1
+meteoric124:meteoric@1.2.4-beta.11
+meteoric124:template-assert-parent@0.1.0-alpha.2
 meteoric124:template-attribute-directive@0.1.0-beta.5
 meteoric124:template-scope@0.1.0-beta.7
 meteoric:autoform-ionic@0.1.6
