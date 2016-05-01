@@ -17,7 +17,6 @@ ejson
 anti:fake
 matb33:collection-hooks
 aldeed:collection2
-fourseven:scss@3.4.3
 iron:router
 aldeed:simple-schema
 aldeed:autoform
@@ -26,6 +25,5 @@ useraccounts:ionic
 accounts-password
 
 reactive-var
-meteoric124:meteoric@1.2.4-beta.11
-standard-minifier-css
-standard-minifier-js
+meteoric124:meteoric@1.2.4-beta.13
+seba:minifiers-autoprefixer
