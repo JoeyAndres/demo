@@ -72,7 +72,7 @@ Router.map(function() {
   this.route('headersFooters.header.buttons', {
     path: 'headersFooters/header/buttons',
     template: 'headersFootersHeaderButtons',
-    layoutTemplate: 'simpleLayout'
+    layoutTemplate: 'layout'
   });
   this.route('headersFooters.header.subheader', {
     path: 'headersFooters/header/subheader',

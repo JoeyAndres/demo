@@ -1,14 +1,16 @@
 <template name="headersFootersHeaderButtons">
-    {{#ionView}}
-        {{#ionHeaderBar class="bar-assertive"}}
-            <div class="buttons">
-                <button class="button">Left Button</button>
-            </div>
-            <h1 class="title">I'm the header.</h1>
-            <div class="buttons">
-                <button class="button">Right Button</button>
-            </div>
-        {{/ionHeaderBar}}
+    {{#ionView title="Header:Buttons"}}
+        {{#ionNavButtons side="left"}}
+            <button class="button button-clear">
+                Left
+            </button>
+        {{/ionNavButtons}}
+
+        {{#ionNavButtons side="right"}}
+            <button class="button button-clear">
+                Right
+            </button>
+        {{/ionNavButtons}}
 
         {{#ionContent}}
             Some content!
