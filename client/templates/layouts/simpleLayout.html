@@ -1,5 +1,7 @@
 <template name="simpleLayout">
-    {{#ionView}}
-        {{> yield}}
-    {{/ionView}}
+    {{#ionApp}}
+        {{#ionView}}
+            {{> yield}}
+        {{/ionView}}
+    {{/ionApp}}
 </template>

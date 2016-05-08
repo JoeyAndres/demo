@@ -2,9 +2,6 @@
     {{#ionView viewTitle="Tabs"}}
         {{#ionTabs class="tabs-positive tabs-icon-top"}}
             {{#ionTab title="Home" iconOn="ion-ios-filing" iconOff="ion-ios-filing-outline" href="/tabs/home"}}
-                {{#contentFor "headerTitle"}}
-                    <h1 class="title">Tab: Home</h1>
-                {{/contentFor}}
                 {{#ionView viewTitle="Facts"}}
                     {{#ionNavTitle}}Hello{{/ionNavTitle}}
                     {{#ionContent class="padding"}}
@@ -14,9 +11,6 @@
             {{/ionTab}}
 
             {{#ionTab title="About" iconOn="ion-ios-clock" iconOff="ion-ios-clock-outline" href="/tabs/about" }}
-                {{#contentFor "headerTitle"}}
-                    <h1 class="title">Tab: About</h1>
-                {{/contentFor}}
                 {{#ionView viewTitle="Facts"}}
                     {{#ionContent class="padding"}}
                         <p>111,111,111 x 111,111,111 = 12,345,678,987,654,321</p>
@@ -34,9 +28,6 @@
             {{/ionTab}}
 
             {{#ionTab title="Settings" iconOn="ion-ios-gear" iconOff="ion-ios-gear-outline" href="/tabs/settings"}}
-                {{#contentFor "headerTitle"}}
-                    <h1 class="title">Tab: Settings</h1>
-                {{/contentFor}}
                 {{#ionView viewTitle="Facts"}}
                     {{#ionContent class="padding"}}
                         <div class="list">
